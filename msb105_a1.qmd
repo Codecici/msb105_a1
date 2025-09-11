@@ -15,15 +15,27 @@ format:
     keep-tex: true
     papersize: A4
     fig-pos: "H"
-bibliography: reproducibility.bib
+bibliography:
+  - reproducibility.bib
+  - references.bib
 abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
 ---
 
 ## Introduction
 
 What is this paper about?
+
+This paper is based on the lecture "Reproducibility"  from the MSB105 Data Science at the Western Norway University of Applied Sciences, and explores the question, "Is Reproducibility Good Enough?"
+
 What is discussed?
+
+
 Why is it of any consequence?
+
+Science builds on prior results.  
+If published findings cannot be trusted, both future research and policy decisions risk being misguided [@ioannidis2005].  
+In medicine, irreproducible results waste resources and delay treatments [@begley2012].  
+
 
 ## Literature review
 
@@ -44,7 +56,14 @@ On the other hand it's claimed that bla bla [@barbalorenaa.2018; @bartlett2008].
 -   Can Quarto documents help with reproducibility?
 -   What problems remains and how can these be solved?
 
+
+
+
 ## Conclusion
+
+
+
+
 
 ## References
 
