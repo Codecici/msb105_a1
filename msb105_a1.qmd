@@ -113,6 +113,13 @@ Additionally:
 ## Discussion of the reseach question
 
 -   Should replicability be the norm or is this to much to ask for now?
+
+[@peng2011] Reproducibility has already become a critical issue in the scientific community. @nsf16137 menes that robust and reliable research is the cornerstone of all scientific development and progress. Replicability should be the norm, and be a core pillar of the scientific method.
+
+Substantial empirical evidence indicates a significant replicability crisis in the current scientific literature, [@nosek2015],[@ioannidis2005], [@mccullough2008], numerous disciplines have encountered published findings that cannot be independently verified. Even when both data and code are provided, successful replication remains rare.
+
+
+
 -   Can Quarto documents help with reproducibility?
 -   What problems remains and how can these be solved?
 
