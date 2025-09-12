@@ -35,24 +35,9 @@ What is discussed?
 
 Why is it of any consequence?
 
-Science builds on prior results.  
-If published findings cannot be trusted, both future research and policy decisions risk being misguided [@ioannidis2005].  
-In medicine, irreproducible results waste resources and delay treatments [@begley2012].  
-Therefore, ensuring reproducibility and replicability is essential for maintaining scientific credibility and for enabling progress across disciplines.  
+
 
 ## Literature review
-
-1. Science advances on a foundation of trusted discoveries, but some reports indicate that a significant portion of research findings cannot be reproduced [@mcnutt2014].
-
-
-2. @peng2011 argues reproducibility is a necessary, but not sufficient, condition for replicability. Without reproducibility, there can be no replicability. Reproducibility has already become a critical issue in the scientific community.
-
-3. @bollen2015 emphasizes that robust and reliable scientific research must satisfy three fundamental criteria. First, reproducibility requires that researchers can obtain consistent results when using the same original data and analytical procedures. Second, replicability demands that independent researchers following the same methodological protocols but collecting new data should arrive at substantively consistent findings. Finally, generalizability examines whether research conclusions remain valid when applied to different contexts, populations, or conditions beyond the original study setting.
-
-
-
-
-
 
 Smart stuff from others about the topic.
 
