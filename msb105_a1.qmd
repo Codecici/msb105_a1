@@ -35,10 +35,7 @@ What is discussed?
 
 Why is it of any consequence?
 
-Science builds on prior results.  
-If published findings cannot be trusted, both future research and policy decisions risk being misguided [@ioannidis2005].  
-In medicine, irreproducible results waste resources and delay treatments [@begley2012].  
-Therefore, ensuring reproducibility and replicability is essential for maintaining scientific credibility and for enabling progress across disciplines.  
+
 
 
 ## Literature review
