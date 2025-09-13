@@ -19,7 +19,7 @@ bibliography:
   - reproducibility_1.bib
   - reproducibility_2.bib
   - my_references.bib
-abstract: "A very short abstract. Put the abstract text here. One or two paragraphs summarising what follows below."
+abstract: "This paper asks, “Is reproducibility good enough?” It reviews key literature, discusses whether reproducibility should be treated as the norm, and considers tools such as Quarto. The conclusion is that reproducibility is essential but not sufficient; replicability and broader reforms are also required for credible science."
 ---
 
 ## Introduction
@@ -52,8 +52,6 @@ Cultural reforms are equally crucial. Guidelines for authors and editors have be
 
 
 
-
-
 ## Discussion of the reseach question
 
 -   Should replicability be the norm or is this to much to ask for now?
@@ -80,6 +78,7 @@ Even with progress in reproducibility, significant challenges remain. Structural
 
 Solutions require both technical and cultural strategies. On the technical side, tools like Quarto, along with predecessors such as R Markdown and knitr [@xie2014; @xie2015; @xie2018; @xie2020; @allaire2020], help integrate code, results, and text, supporting reproducibility across platforms. Culturally, change must come through author and editor guidelines to limit false positives [@simmons2011; @munafo2017manifesto], systemic reforms promoting openness [@hardwicke2020calibrating], and adoption of practices such as data citation [@brase2009]. Meta-research has outlined concrete steps in this direction, including stronger peer review, preregistration, and broader sharing of code and data [@hardwicke2020calibrating].
 
+
 ## Conclusion
 
 This paper reviewed the distinction between reproducibility and replicability, the contribution of Quarto, and the remaining barriers to reliable science. The evidence shows that reproducibility is necessary but insufficient, as many published research results fail to be independently verified [@ioannidis2005; @nosek2015; @mccullough2008]. Replicability and generalizability must also be part of the standard for credible research [@bollen2015].
@@ -98,3 +97,8 @@ and
 
 -   Version number and reference to packages used
 -   R version used
+
+### Software and Packages
+
+- R version 4.5.1 (2025-06-13)  
+- Base packages: stats, graphics, grDevices, utils, datasets, methods, base  
