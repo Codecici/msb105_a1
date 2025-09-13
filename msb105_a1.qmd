@@ -82,7 +82,13 @@ Solutions require both technical and cultural strategies. On the technical side,
 
 ## Conclusion
 
+This paper reviewed the distinction between reproducibility and replicability, the contribution of Quarto, and the remaining barriers to reliable science. The evidence shows that reproducibility is necessary but insufficient, as many published research results fail to be independently verified [@ioannidis2005; @nosek2015; @mccullough2008]. Replicability and generalizability must also be part of the standard for credible research [@bollen2015].
 
+Quarto and earlier tools such as knitr and R Markdown provide valuable technical support by combining code, data, and text into dynamic documents [@xie2014; @xie2018; @allaire2020]. These tools reduce fragmentation but cannot alone solve deeper problems like publication bias and false positives [@rosenthal1979; @simmons2011].
+
+Lasting progress depends on both technical and cultural reforms.Dynamic documents, environment management, and data citation systems improve reproducibility, while preregistration, open sharing, and systemic incentives strengthen replicability [@munafo2017manifesto; @hardwicke2020calibrating].
+
+In sum, reproducibility is not enough. Science must normalize replicability and embed openness into its practices to ensure long-term credibility.
 
 
 
