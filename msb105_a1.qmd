@@ -40,91 +40,45 @@ Why is it of any consequence?
 
 ## Literature review
 
-Smart stuff from others about the topic.
+Reproducibility has been described as a core requirement of trustworthy science [@mcnutt2014]. Still, as @peng2011 notes, it is only a minimal foundation for replicability. The National Science Foundation distinguishes reproducibility, replicability, and generalizability as complementary dimensions of robust science [@bollen2015; @nsf16137], and @goodman2016 emphasizes methods reproducibility, results reproducibility, and robustness as distinct but interrelated concepts.
 
-Use a least 20 citations, a least 5 of them must be new (not from the provided .bib file).
+Serious obstacles remain. Publication bias results in overrepresentation of positive findings and neglect of null results [@rosenthal1979], inflating false positives and undermining meta-analyses [@iyengar1988]. Undisclosed analytic flexibility further contributes to unreliable results [@simmons2011]. Ioannidis argued that most published findings may in fact be false [@ioannidis2005], while in medicine, @begley2012raise documented how irreproducible preclinical studies waste resources.
 
-Use both in-line and normal citations.
+Large replication efforts confirm these concerns. In psychology, replication rates are far lower than originally reported [@nosek2015; @klein2018], while economics studies reveal failures tied to missing data and poor documentation [@mccullough2008]. Surveys of researchers across disciplines reinforce that reproducibility is a persistent problem [@baker2016].
 
-Example:
+Technical solutions have been proposed. Research objects and data citation systems integrate and track research components [@bechhofer2013; @brase2009]. Literate programming [@knuth1992] and its derivatives such as noweb [@ramsey], Sweave [@leisch2002], knitr [@xie2014; @xie2015; @xie2020], and R Markdown [@xie2018; @allaire2020] paved the way for Quarto, which supports multi-language workflows and reproducible documents. Yet studies show that even with code and data available, replication may fail due to dependency management or poor documentation [@pimentel2019large; @rule2018exploration].
 
-@gentleman2005 argues that bla bla bla.
-On the other hand it's claimed that bla bla [@barbalorenaa.2018; @bartlett2008].
-
-
-1. Science advances on a foundation of trusted discoveries, but some reports indicate that a significant portion of research findings cannot be reproduced. [@mcnutt2014]
-
-2. @peng2011 argues reproducibility is a necessary, but not sufficient, condition for replicability. Without reproducibility, there can be no replicability. Reproducibility has already become a critical issue in the scientific community.
-
-3. @bollen2015 emphasizes that robust and reliable scientific research must satisfy three fundamental criteria.
-First, reproducibility requires that researchers can obtain consistent results when using the same original data and analytical procedures. 
-Second, replicability demands that independent researchers following the same methodological protocols but collecting new data should arrive at substantively consistent findings.
-Finally, generalizability examines whether research conclusions remain valid when applied to different contexts, populations, or conditions beyond the original study setting.
+Cultural reforms are equally crucial. Guidelines for authors and editors have been proposed to reduce false positives [@simmons2011], while broader initiatives call for preregistration, data sharing, and openness [@munafo2017manifesto]. Meta-research emphasizes systemic change to align incentives with transparency and reliability [@hardwicke2020calibrating].
 
 
-4. @nsf16137 emphasizes that robust and reliable research serves as the cornerstone for all scientific development and progress.
 
-
-5. @goodman2016 points out that research reproducibility can be explained through two key dimensions:
--Methods reproducibility requires transparent research procedures and data to enable exact replication of the study.
--Results reproducibility emphasizes obtaining consistent conclusions through independent replication studies.
-
-Additionally:
--Robustness refers to the stability of research conclusions when core assumptions or experimental conditions change.
--Generalizability indicates whether experimental effects persist beyond the original study context or population.
-
-
-6.Publication bias leads to the excessive publication of studies with Type I errors (false positives). Specifically, studies supporting the "no effect" hypothesis (H₀) — i.e., negative results — tend to be shelved due to the "file drawer problem," [@rosenthal1979], while only results showing statistical significance (which may be false positives) are likely to be published.
-
-7. The severe consequences of Type I errors (false positives) in scientific practice mainly include three aspects: persistence, resource waste, and credibility damage.[@simmons2011]
-
-8. @wikipedia2020 points out that a meta-analysis as statistical analysis that combines the results of multiple scientific studies. But @iyengar1988 argues that if there is a publication bias this will also influence meta-analysis.
-
-9. @simmons2011 proposed a solution to the "replication crisis," which includes six requirements for authors and four guidelines for editors.
-
-10. @ioannidis2005 argues that in contemporary scientific practice, the majority—or even the vast majority—of published research claims may be false.
-
-11. @nosek2015 employed high-powered experimental designs and obtained materials provided by the original authors, yet the majority of replication attempts failed to reproduce evidence supporting the original findings.
-
-12.@klein2018 found that 15 (54%) of the replications provided evidence of a statistically significant effect in the same direction as the original finding.
-
-13.[@mccullough2008] All the long-standing archives at economics journals do not facilitate the re-production of published results. Even when both data and code are provided (e.g., the Federal Reserve Bank of St. Louis Review), successful replication remains rare.
-
-14.[@bechhofer2013] Research Objects bundle all data, code, software environments, workflows, and even the research paper itself into a complete "box," allowing anyone to easily reproduce the entire work — effectively solving the problem of content fragmentation.
-
-15.[@brase2009] Assigning a unique Digital Object Identifier (DOI) to datasets enables their formal and standardized citation, just like research papers — effectively addressing the issue of "data citation and incentives".
-
-16. @knuth1992 pioneered the concept of literate programming, advocating for the deep integration of code and documentation to ensure computational transparency and reproducibility from the source. [@ramsey] The noweb tool later simplified Knuth’s literate programming approach, making it more lightweight, language-agnostic, and accessible—effectively lowering the technical barriers to creating executable research documents.
-
-
-17. @begley2012raise reveals severe reproducibility issues in the field.
-
-18. @hardwicke2020calibrating argues that improving the efficiency and credibility of science requires not only technical tools but also institutional and cultural reforms.
-
-19.@baker2016 reveals that more than 70% of researchers failed to replicate another scientist’s experiments.
-
-20.@munafo2017manifesto proposes a “manifesto” for reproducible science, highlighting the need for transparency, preregistration, and open data sharing. 
-
-21.@pimentel2019large analyzes over 1.4 million Jupyter notebooks on GitHub, the study found that only about 24% ran without errors and just 4% produced the same results.
-
-22.@rule2018exploration shows that computational notebooks such as Jupyter supports flexible analysis, this practice limits reproducibility and the effective communication of results.
 
 
 ## Discussion of the reseach question
 
 -   Should replicability be the norm or is this to much to ask for now?
 
-[@peng2011] Reproducibility has already become a critical issue in the scientific community. @nsf16137 menes that robust and reliable research is the cornerstone of all scientific development and progress. Replicability should be the norm, and be a core pillar of the scientific method.
+Replicability should be regarded as a scientific norm rather than an optional goal. While reproducibility is widely recognized as a baseline [@peng2011], it cannot ensure reliable findings on its own. Evidence from psychology, medicine, and economics shows that many published results fail independent verification [@nosek2015; @ioannidis2005; @mccullough2008], and replication success remains limited even when code and data are provided [@pimentel2019large].
 
-Substantial empirical evidence indicates a significant replicability crisis in the current scientific literature, [@nosek2015],[@ioannidis2005], [@mccullough2008], numerous disciplines have encountered published findings that cannot be independently verified. Even when both data and code are provided, successful replication remains rare.
+The implications are serious: false positives and selective reporting waste resources and undermine confidence in research [@simmons2011]. As noted by @nsf16137, robust science requires more than isolated reproducibility, and @bollen2015 stresses that credibility depends on reproducibility, replicability, and generalizability together.
 
+Possible remedies already exist. Proposals include author and editor guidelines to reduce false positives [@simmons2011], research objects and data citation systems [@bechhofer2013; @brase2009], literate programming traditions [@knuth1992], and broader reforms promoted by meta-research and open science initiatives [@hardwicke2020calibrating; @munafo2017manifesto]. These efforts suggest that normalizing replicability is not excessive but a necessary step toward credible science.
 
 
 -   Can Quarto documents help with reproducibility?
+
+Quarto offers a powerful framework to improve reproducibility by integrating code, data, and analysis into one document, reducing problems caused by fragmented research outputs [@bechhofer2013]. It continues the literate programming tradition [@knuth1992], evolving from earlier tools like knitr [@xie2014; @xie2015] and R Markdown [@xie2018; @xie2020], which first enabled the seamless combination of code and narrative.
+
+Still, reproducibility cannot be guaranteed simply by sharing code and data. Studies of computational notebooks reveal that many analyses fail to rerun due to missing dependencies or poor documentation [@pimentel2019large]. Similar shortcomings have been observed in economics, where archives rarely supported full replication [@mccullough2008]. Thus, while Quarto reduces technical barriers, it cannot by itself resolve issues such as publication bias [@rosenthal1979] or false positives [@simmons2011].
+
+Where Quarto shows its greatest strength is in aligning with open science practices. It supports version control, citation management, and multiple output formats [@xie2018; @allaire2020], enabling consistent communication of results. More importantly, it complements wider reforms promoted by meta-research [@hardwicke2020calibrating] and open science initiatives advocating transparency, preregistration, and data sharing [@munafo2017manifesto]. In this way, Quarto functions not as a complete solution, but as a key step toward more trustworthy science.
+
+
 -   What problems remains and how can these be solved?
 
+Even with progress in reproducibility, significant challenges remain. Structural incentives still prioritize novel, positive results, encouraging publication bias and sustaining false positives, which undermines efficiency and damages trust in science [@rosenthal1979; @simmons2011]. Technical hurdles also persist: differences in software versions, dependencies, and computing environments often prevent replication even when data and code are shared [@pimentel2019large; @mccullough2008; @nosek2015]. Moreover, replication work often lacks cultural and institutional support, while limited transparency, preregistration, and open data sharing further discourage such efforts [@hardwicke2020calibrating; @munafo2017manifesto; @baker2016].
 
-
+Solutions require both technical and cultural strategies. On the technical side, tools like Quarto, along with predecessors such as R Markdown and knitr [@xie2014; @xie2015; @xie2018; @xie2020; @allaire2020], help integrate code, results, and text, supporting reproducibility across platforms. Culturally, change must come through author and editor guidelines to limit false positives [@simmons2011; @munafo2017manifesto], systemic reforms promoting openness [@hardwicke2020calibrating], and adoption of practices such as data citation [@brase2009]. Meta-research has outlined concrete steps in this direction, including stronger peer review, preregistration, and broader sharing of code and data [@hardwicke2020calibrating].
 
 ## Conclusion
 
