@@ -26,16 +26,16 @@ abstract: "A very short abstract. Put the abstract text here. One or two paragra
 
 What is this paper about?
 
-This paper is based on the lecture "Reproducibility" from the MSB105 Data Science at the Western Norway University of Applied Sciences, and explores the question, "Is Reproducibility Good Enough?"
+This paper is based on the lecture "Reproducibility" in the MSB105 Data Science at the Western Norway University of Applied Sciences, addresses the central question: "Is Reproducibility Good Enough?"
 
 What is discussed?
 
-
+This paper reviews the literature on reproducibility and replicability, and notes that many studies have reported difficulties in repeating or independently verifying published results. Such evidence suggests that reproducibility alone is insufficient for ensuring reliable knowledge. The paper also considers whether replicability should be treated as a scientific norm, examines the role of tools such as Quarto in supporting reproducible workflows, and briefly points to technical and cultural challenges. Finally, it outlines potential solutions, including dynamic documents, data citation, and institutional reforms to strengthen scientific credibility.
 
 
 Why is it of any consequence?
 
-
+Reliable knowledge is the cornerstone of scientific progress. When findings cannot be verified, the path of research becomes uncertain and future decisions risk being misguided. Both reproducibility and replicability are needed to keep science trustworthy.
 
 
 ## Literature review
