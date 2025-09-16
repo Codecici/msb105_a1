@@ -3,40 +3,39 @@ title: "Is reproducibility good enough?"
 author: "Karin Liang"
 date: last-modified
 date-format: "dddd D MMM, YYYY"
+papersize: a4
 csl: apa7.csl
 lang: en-GB
+citeproc: true
 format:
-  html: default
+  html: 
+    mainfont: "Helvetica"
   typst:
-    papersize: a4
+    mainfont: "Cambria"
   pdf:
     documentclass: article
+    mainfont: "Hoefler Text"
     number-sections: true
+    include-in-header:
+      text: |
+        \setcounter{section}{1}
     keep-tex: true
-    papersize: A4
     fig-pos: "H"
-bibliography:
-  - reproducibility_1.bib
-  - reproducibility_2.bib
-  - my_references.bib
+    pdf-engine: xelatex
+  docx:
+    default: true
+bibliography: 
+  - referencesA.bib
+  - referencesB.bib
+  - referencesC.bib
 abstract: "This paper asks, “Is reproducibility good enough?” It reviews key literature, discusses whether reproducibility should be treated as the norm, and considers tools such as Quarto. The conclusion is that reproducibility is essential but not sufficient; replicability and broader reforms are also required for credible science."
 ---
 
 ## Introduction
 
-What is this paper about?
-
-This paper is based on the lecture "Reproducibility" in the MSB105 Data Science at the Western Norway University of Applied Sciences, addresses the central question: "Is Reproducibility Good Enough?"
-
-What is discussed?
-
-This paper reviews the literature on reproducibility and replicability, and notes that many studies have reported difficulties in repeating or independently verifying published results. Such evidence suggests that reproducibility alone is insufficient for ensuring reliable knowledge. The paper also considers whether replicability should be treated as a scientific norm, examines the role of tools such as Quarto in supporting reproducible workflows, and briefly points to technical and cultural challenges. Finally, it outlines potential solutions, including dynamic documents, data citation, and institutional reforms to strengthen scientific credibility.
-
-
-Why is it of any consequence?
+This paper is based on the lecture "Reproducibility" in the MSB105 Data Science at the Western Norway University of Applied Sciences, which addresses the central question: "Is Reproducibility Good Enough?" We review the literature on reproducibility and replicability, and notes that many studies have reported difficulties in repeating or independently verifying published results. Such evidence suggests that reproducibility alone is insufficient for ensuring reliable knowledge. The paper also considers whether replicability should be treated as a scientific norm, examines the role of tools such as Quarto in supporting reproducible workflows, and briefly points to technical and cultural challenges. Finally, it outlines potential solutions, including dynamic documents, data citation, and institutional reforms to strengthen scientific credibility.
 
 Reliable knowledge is the cornerstone of scientific progress. When findings cannot be verified, the path of research becomes uncertain and future decisions risk being misguided. Both reproducibility and replicability are needed to keep science trustworthy.
-
 
 ## Literature review
 
@@ -50,11 +49,9 @@ Technical solutions have been proposed. Research objects and data citation syste
 
 Cultural reforms are equally crucial. Guidelines for authors and editors have been proposed to reduce false positives [@simmons2011], while broader initiatives call for preregistration, data sharing, and openness [@munafo2017manifesto]. As noted by @hardwicke2020calibrating, lasting improvements in efficiency and credibility will depend not just on technical solutions but also on broader institutional and cultural change.
 
-
-
 ## Discussion of the reseach question
 
--   Should replicability be the norm or is this to much to ask for now?
+### Should replicability be the norm or is this to much to ask for now?
 
 Replicability should be regarded as a scientific norm rather than an optional goal. While reproducibility is widely recognized as a baseline [@peng2011], it cannot ensure reliable findings on its own. Evidence from psychology, medicine, and economics shows that many published results fail independent verification [@nosek2015; @ioannidis2005; @mccullough2008], and replication success remains limited even when code and data are provided [@pimentel2019large].
 
@@ -62,8 +59,7 @@ The implications are serious: false positives and selective reporting waste reso
 
 Possible remedies already exist. Proposals include author and editor guidelines to reduce false positives [@simmons2011], research objects and data citation systems [@bechhofer2013; @brase2009], literate programming traditions [@knuth1992], and broader reforms promoted by meta-research and open science initiatives [@hardwicke2020calibrating; @munafo2017manifesto]. These efforts suggest that normalizing replicability is not excessive but a necessary step toward credible science.
 
-
--   Can Quarto documents help with reproducibility?
+### Can Quarto documents help with reproducibility?
 
 Quarto offers a powerful framework to improve reproducibility by integrating code, data, and analysis into one document, reducing problems caused by fragmented research outputs [@bechhofer2013]. It continues the literate programming tradition [@knuth1992], evolving from earlier tools like knitr [@xie2014; @xie2015] and R Markdown [@xie2018; @xie2020], which first enabled the seamless combination of code and narrative.
 
@@ -71,13 +67,11 @@ Still, reproducibility cannot be guaranteed simply by sharing code and data. Stu
 
 Where Quarto shows its greatest strength is in aligning with open science practices. It supports version control, citation management, and multiple output formats [@xie2018; @allaire2020], enabling consistent communication of results. More importantly, it complements wider reforms promoted by meta-research [@hardwicke2020calibrating] and open science initiatives advocating transparency, preregistration, and data sharing [@munafo2017manifesto]. In this way, Quarto functions not as a complete solution, but as a key step toward more trustworthy science.
 
-
--   What problems remains and how can these be solved?
+### What problems remains and how can these be solved?
 
 Even with progress in reproducibility, significant challenges remain. Structural incentives still prioritize novel, positive results, encouraging publication bias and sustaining false positives, which undermines efficiency and damages trust in science [@rosenthal1979; @simmons2011]. Technical hurdles also persist: differences in software versions, dependencies, and computing environments often prevent replication even when data and code are shared [@pimentel2019large; @mccullough2008; @nosek2015]. Moreover, replication work often lacks cultural and institutional support, while limited transparency, preregistration, and open data sharing further discourage such efforts [@hardwicke2020calibrating; @munafo2017manifesto; @baker2016].
 
 Solutions require both technical and cultural strategies. On the technical side, tools like Quarto, along with predecessors such as R Markdown and knitr [@xie2014; @xie2015; @xie2018; @xie2020; @allaire2020], help integrate code, results, and text, supporting reproducibility across platforms. Culturally, change must come through author and editor guidelines to limit false positives [@simmons2011; @munafo2017manifesto], systemic reforms promoting openness [@hardwicke2020calibrating], and adoption of practices such as data citation [@brase2009]. Meta-research has outlined concrete steps in this direction, including stronger peer review, preregistration, and broader sharing of code and data [@hardwicke2020calibrating].
-
 
 ## Conclusion
 
@@ -89,16 +83,10 @@ Lasting progress depends on both technical and cultural reforms.Dynamic document
 
 In sum, reproducibility is not enough. Science must normalize replicability and embed openness into its practices to ensure long-term credibility.
 
-
-
-## References
-
-and
-
--   Version number and reference to packages used
--   R version used
-
 ### Software and Packages
 
 - R version 4.5.1 (2025-06-13)  
 - Base packages: stats, graphics, grDevices, utils, datasets, methods, base  
+
+## References
+

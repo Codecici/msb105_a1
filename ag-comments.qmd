@@ -1,0 +1,7 @@
+---
+title: "Comments by ag"
+author: "Arnstein Gjestland"
+format: html
+---
+
+- changed the names of the .bib files. Seems like `typst` dosn't like undescore in names
