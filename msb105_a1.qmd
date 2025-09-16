@@ -25,9 +25,9 @@ format:
   docx:
     default: true
 bibliography: 
-  - referencesA.bib
-  - referencesB.bib
-  - referencesC.bib
+  - my_references.bib
+  - reproducibility_1.bib
+  - reproducibility_2.bib
 abstract: "This paper asks, “Is reproducibility good enough?” It reviews key literature, discusses whether reproducibility should be treated as the norm, and considers tools such as Quarto. The conclusion is that reproducibility is essential but not sufficient; replicability and broader reforms are also required for credible science."
 ---
 
