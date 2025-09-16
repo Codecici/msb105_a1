@@ -1,0 +1,68 @@
+---
+title: "Comments by ag"
+author: "Arnstein Gjestland"
+format: html
+---
+
+## General comments
+
+- A very nice little paper
+  - A very skilled use of the citation system
+  - Nice presentation of the literature and the topic
+  - A pointed and very good discussion of the underlying problems
+  - The paper is very well written and a delight to read
+- The use of git/Github looks perfect
+  - The commit messages are exemplary
+  
+## My proposed changes/suggestions/tips
+
+- I have added the line `citeproc: true` to the YAML header. This forces `typst` to use the quarto/pandoc citation system (else `typst`uses it's own system that by default does not support multiple .bib files).
+- I have included a work-around for a bug in `pandoc` that forces numbering of sections to start at 1 instead of 0
+- I have added `mainfont` to the different output formats just to show how one can have a different main font for the different formats
+
+### Some comments to the changes proposed for the YAML
+
+```
+title: "Is reproducibility good enough?"
+author: "Karin Liang"
+date: last-modified
+date-format: "dddd D MMM, YYYY"
+papersize: a4
+csl: apa7.csl
+lang: en-GB
+# force typst to use quarto/pandoc citing system
+# else we get problems with typst and multiple .bib files
+citeproc: true
+format:
+  html: 
+    mainfont: "Helvetica"
+  typst:
+    mainfont: "Cambria"
+#mainfont doesn't work with docx documents. We have to use a template
+#document to specify fonts and formatting
+  docx: 
+    default: true
+  pdf:
+    documentclass: article
+    mainfont: "Hoefler Text"
+    number-sections: true
+# force section numbering to start at 1 not 0
+#should be:
+#    number-offset: 1
+#does not work, bug in pandoc
+#this works:
+    include-in-header:
+      text: |
+        \setcounter{section}{1}
+    fig-pos: "H"
+    pdf-engine: xelatex
+#the old way
+#bibliography: [my_references.bib, reproducibility_1.bib, reproducibility_2.bib]
+#the new way
+bibliography: 
+  - my_references.bib
+  - reproducibility_1.bib
+  - reproducibility_2.bib
+```
+
+
